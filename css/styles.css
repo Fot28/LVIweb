@@ -1,0 +1,182 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Damion&family=Monoton&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Damion&family=Fugaz+One&family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Damion&display=swap");
+
+* {
+	margin: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-image: url(../img/thaddaeus-lim-RBthQZJd_vU-unsplash.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.navbar-brand {
+	/* font-family: "Bagel Fat One", cursive;
+	font-family: "Damion", cursive;
+	font-family: "Monoton", cursive; */
+	font-family: "Bagel Fat One", cursive;
+	font-family: "Damion", cursive;
+	font-family: "Fugaz One", cursive;
+	font-family: "Monoton", cursive;
+}
+
+.jumbotron {
+	position: relative;
+}
+
+.jumbH1 {
+	position: absolute;
+	top: 100px;
+	color: white;
+	font-family: "Bagel Fat One", cursive;
+}
+
+.jumbP {
+	position: absolute;
+	right: 280px;
+	bottom: 5px;
+	/* top: 260px; */
+	color: white;
+	font-family: "Bagel Fat One", cursive;
+	font-family: "Damion", cursive;
+	font-size: 1.5rem;
+}
+
+.jumbotron {
+	background-image: url(../img/marcin-jozwiak-oh0DITWoHi4-unsplash.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 8rem 2rem;
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(240, 248, 255, 0.767);
+}
+
+.about p {
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+@media only screen and (min-width: 1241px) {
+	#genContainer {
+		max-width: 75% !important;
+	}
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1240px) {
+	#genContainer {
+		max-width: 85% !important;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	#genContainer {
+	}
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+	#genContainer {
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#genContainer {
+	}
+}
+
+/* carousel */
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+.carousel-frame {
+	position: relative;
+	width: 80%;
+	height: min(calc(90vh - 10px), 350px);
+	margin: 10px auto;
+	overflow: hidden;
+	box-shadow: inset 60px 0px 60px -60px rgb(0, 0, 0),
+		inset -60px 0px 60px -60px rgb(0, 0, 0);
+	background-image: radial-gradient(
+		circle,
+		transparent,
+		transparent 75%,
+		rgba(0, 0, 0, 0.3)
+	);
+	background-color: white;
+}
+
+.carousel-slide {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	mix-blend-mode: multiply;
+}
+
+.carousel-slide img {
+	min-width: 100%;
+	object-fit: cover;
+}
+
+.carousel-prev {
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	margin-top: -15px;
+	z-index: 10;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+
+.carousel-next {
+	position: absolute;
+	top: 50%;
+	right: 30px;
+	margin-top: -15px;
+	z-index: 10;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.8);
+	cursor: pointer;
+}
+
+.carousel-dots {
+	list-style: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 5%;
+	margin: 0 auto;
+	width: max(100px, 15%);
+	display: flex;
+	justify-content: space-between;
+}
+
+.carousel-dots li {
+	width: 8px;
+	height: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.8);
+	border-radius: 50%;
+	cursor: pointer;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-dots .active-dot {
+	background-color: rgba(255, 255, 255, 0.8);
+}
